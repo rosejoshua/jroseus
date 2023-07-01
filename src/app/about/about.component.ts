@@ -6,10 +6,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
-
-  constructor() { }
+  wrapperDivClass: string;
+  wrapperDivClassShow: string;
+  wrapperDivClassHide: string;
+  constructor() {
+    this.wrapperDivClassHide = 'flex flex-wrap transition duration-300 opacity-0';
+    this.wrapperDivClassShow = 'flex flex-wrap transition duration-300 opacity-100';
+    this.wrapperDivClass = this.wrapperDivClassHide;
+   }
 
   ngOnInit(): void {
+   this.showDiv(); 
+  }
+
+  showDiv(): void {
+    setTimeout(() => {
+      this.wrapperDivClass = this.wrapperDivClassShow;
+    }, 300);
   }
 
 }
