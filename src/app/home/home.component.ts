@@ -39,12 +39,12 @@ export class HomeComponent implements OnInit {
     this.activeImg = 0;
     this.imgShowDuration = 4000; //millis to show image before starting transitions
     this.timeoutId = setTimeout(()=> {}, 0);
-    this.photoClassShow = 'transition duration-700 object-scale-down shadow opacity-100';
+    this.photoClassShow = 'transition duration-700 object-scale-down opacity-100';
     this.photoClassHide = 'transition duration-700 object-scale-down opacity-0';
     this.photoClass = this.photoClassHide;
     let re:RegExp = / /gi;
     this.photoNames.forEach((value, index, array) => {
-      array[index] = '/assets/img/' + value.replace(re, '-') + '.JPG';
+      array[index] = 'https://jrose.us/assets/img/' + value.replace(re, '-') + '.JPG';
     });
 
     this.imgArr = [];

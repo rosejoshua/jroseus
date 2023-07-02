@@ -74,7 +74,7 @@ export class PortfolioComponent implements OnInit {
       'Man smoking outside of his restaurant at night in Hong Kong',
     ];
     this.photoClassHide = 'transition duration-300 hover:scale-[102%] invisible opacity-0';
-    this.photoClassShow = 'transition duration-300 hover:scale-[102%] shadow visible opacity-100';
+    this.photoClassShow = 'transition duration-300 hover:scale-[102%] visible opacity-100';
     this.photoClass = this.photoClassHide;
     this.modalClassShow = 'relative z-10 visible';
     this.modalClassHide = 'relative z-10 hidden';
@@ -89,7 +89,7 @@ export class PortfolioComponent implements OnInit {
     this.photoNames = Object.assign([], this.photoAlts);
     let re:RegExp = / /gi;
     this.photoNames.forEach((value, index, array) => {
-      array[index] = '/assets/img/' + value.replace(re, '-') + '.JPG';
+      array[index] = 'https://jrose.us/assets/img/' + value.replace(re, '-') + '.JPG';
     });
 
     this.imgArr = [];
