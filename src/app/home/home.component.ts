@@ -44,7 +44,7 @@ export class HomeComponent implements OnInit {
     this.photoClass = this.photoClassHide;
     let re:RegExp = / /gi;
     this.photoNames.forEach((value, index, array) => {
-      array[index] = 'https://jrose.us/assets/img/' + value.replace(re, '-') + '.JPG';
+      array[index] = '/assets/img/' + value.replace(re, '-') + '.JPG';
     });
 
     this.imgArr = [];

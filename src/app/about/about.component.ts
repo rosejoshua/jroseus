@@ -10,8 +10,8 @@ export class AboutComponent implements OnInit {
   wrapperDivClassShow: string;
   wrapperDivClassHide: string;
   constructor() {
-    this.wrapperDivClassHide = 'flex flex-wrap transition duration-300 opacity-0';
-    this.wrapperDivClassShow = 'flex flex-wrap transition duration-300 opacity-100';
+    this.wrapperDivClassHide = 'flex flex-wrap transition duration-300 opacity-0 xl:pt-12 lg:pt-10';
+    this.wrapperDivClassShow = 'flex flex-wrap transition duration-300 opacity-100 xl:pt-12 lg:pt-10';
     this.wrapperDivClass = this.wrapperDivClassHide;
    }
 

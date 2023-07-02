@@ -89,7 +89,7 @@ export class PortfolioComponent implements OnInit {
     this.photoNames = Object.assign([], this.photoAlts);
     let re:RegExp = / /gi;
     this.photoNames.forEach((value, index, array) => {
-      array[index] = 'https://jrose.us/assets/img/' + value.replace(re, '-') + '.JPG';
+      array[index] = '/assets/img/' + value.replace(re, '-') + '.JPG';
     });
 
     this.imgArr = [];

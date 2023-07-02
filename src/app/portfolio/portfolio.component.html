@@ -5,7 +5,7 @@
 <div class={{this.modalClass}} aria-labelledby="modal-title" role="dialog" aria-modal="true">
   <div class={{modalBackgroundClass}} (click)="closeModal()"></div>
   <div class="fixed flex items-center justify-center inset-0 z-10 overflow-y-auto" (click)="closeModal()">
-      <div class="max-h-[100vh] flex p-4">
+      <div loading="eager" class="max-h-[100vh] flex p-4">
         <img class={{modalImgClass}} src={{modalImgSrc}} alt={{modalImgAlt}} (click)="closeModal()"/>
       </div>
   </div>
