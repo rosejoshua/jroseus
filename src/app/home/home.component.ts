@@ -39,8 +39,8 @@ export class HomeComponent implements OnInit {
     this.activeImg = 0;
     this.imgShowDuration = 4000; //millis to show image before starting transitions
     this.timeoutId = setTimeout(()=> {}, 0);
-    this.photoClassShow = 'transition duration-700 object-scale-down opacity-100';
-    this.photoClassHide = 'transition duration-700 object-scale-down opacity-0';
+    this.photoClassShow = 'transition duration-700 object-scale-down min-h-[400px] opacity-100';
+    this.photoClassHide = 'transition duration-700 object-scale-down min-h-[400px] opacity-0';
     this.photoClass = this.photoClassHide;
     let re:RegExp = / /gi;
     this.photoNames.forEach((value, index, array) => {
