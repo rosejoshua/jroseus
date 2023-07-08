@@ -31,6 +31,7 @@ export class HomeComponent implements OnInit {
       'Two men talk and smoke at night in Seoul',
       'Black and white photo of a very small flower',
       'Sunset mountains and ocean outside of Anchorage',
+      'Vietnamese woman counts money while husband watches',
       'View of lighted bridge from the water in Vietnam',
       'Busan fish market vendors',
       'Vietnamese riverboat at night',

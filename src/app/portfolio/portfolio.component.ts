@@ -72,6 +72,7 @@ export class PortfolioComponent implements OnInit {
       'Buddhist novices at the beach in Cambodia',
       'Vietnamese riverboat at night',
       'Man smoking outside of his restaurant at night in Hong Kong',
+      'Vietnamese woman counts money while husband watches',
     ];
     this.photoClassHide = 'transition duration-300 hover:scale-[102%] invisible opacity-0';
     this.photoClassShow = 'transition duration-300 hover:scale-[102%] visible opacity-100';
