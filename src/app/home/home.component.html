@@ -1,3 +1,10 @@
-<div class="xl:h-[85vh] lg:h-[80vh] md:h-[80vh] h-[75vh] flex justify-center p-4 lg:pt-1">
-  <img class={{photoClass}} src={{imgArr[activeImg].nameStr}} alt={{imgArr[activeImg].altStr}} (click)="clickImg()" (load)="showImg()" />
-</div>
+<ng-container *ngFor="let photo of imgArrHome; let i = index" >
+  <div *ngIf="i==activeImg" id="imgHolder{{i}}" class="xl:h-[85vh] lg:h-[80vh] md:h-[80vh] h-[75vh] flex justify-center p-4 lg:pt-1">
+    <img *ngIf="i==activeImg" id="img{{i}}" class={{photoClass}} ngSrc={{imgArrHome[i].nameStr}} alt={{imgArrHome[i].altStr}} priority width={{imgArrHome[i].width}} height={{imgArrHome[i].height}} (click)="clickImg()" (load)="showImg()" />
+    <img *ngIf="i!=activeImg" id="img{{i}}" class={{photoClass}} ngSrc={{imgArrHome[i].nameStr}} alt={{imgArrHome[i].altStr}} priority width={{imgArrHome[i].width}} height={{imgArrHome[i].height}} (click)="clickImg()" (load)="showImg()" />
+  </div>
+  <div *ngIf="i!=activeImg" id="imgHolder{{i}}" class="xl:h-[85vh] lg:h-[80vh] md:h-[80vh] h-[75vh] flex justify-center p-4 lg:pt-1 hidden">
+    <img *ngIf="i==activeImg" id="img{{i}}" class={{photoClass}} ngSrc={{imgArrHome[i].nameStr}} alt={{imgArrHome[i].altStr}} priority width={{imgArrHome[i].width}} height={{imgArrHome[i].height}} (click)="clickImg()" (load)="showImg()" />
+    <img *ngIf="i!=activeImg" id="img{{i}}" class={{photoClass}} ngSrc={{imgArrHome[i].nameStr}} alt={{imgArrHome[i].altStr}} priority width={{imgArrHome[i].width}} height={{imgArrHome[i].height}} (click)="clickImg()" (load)="showImg()" />
+  </div>
+</ng-container>
