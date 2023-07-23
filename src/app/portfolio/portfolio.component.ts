@@ -29,10 +29,10 @@ export class PortfolioComponent implements OnInit {
   constructor(private photoService: PhotoService) {
     this.imgArr = photoService.getImgArrPortfolio();
     
-    this.photoClassHide = 'transition duration-300 z-10 hover:scale-[102%] opacity-0';
-    this.photoClassShow = 'transition duration-300 z-10 hover:scale-[102%] opacity-100';
-    this.spinnerHolderClassShow = 'transition duration-300 absolute z-20 -translate-x-1/2 -translate-y-1/2 top-2/4 left-1/2 opacity-100';
-    this.spinnerHolderClassHide = 'transition duration-300 absolute z-20 -translate-x-1/2 -translate-y-1/2 top-2/4 left-1/2 opacity-0';
+    this.photoClassHide = 'transition duration-300 z-20 hover:scale-[102%] opacity-0';
+    this.photoClassShow = 'transition duration-300 z-20 hover:scale-[102%] opacity-100';
+    this.spinnerHolderClassShow = 'transition duration-300 absolute z-0 -translate-x-1/2 -translate-y-1/2 top-2/4 left-1/2 opacity-100';
+    this.spinnerHolderClassHide = 'transition duration-300 absolute z-0 -translate-x-1/2 -translate-y-1/2 top-2/4 left-1/2 opacity-0';
     this.photoClass = new Array(photoService.getImgArrPortfolio.length);
     for (let i in photoService.getImgArrPortfolio()) {
       this.photoClass[i] = {
@@ -77,10 +77,6 @@ export class PortfolioComponent implements OnInit {
     setTimeout(() => {
       this.modalClass = this.modalClassHide;
     }, 500);
-  }
-
-  initImgHide(i:number): void {
-
   }
 
   showImg(i:number): void {
