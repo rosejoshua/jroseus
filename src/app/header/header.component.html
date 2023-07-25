@@ -2,12 +2,14 @@
   <div class="flex flex-col items-center md:flex-row justify-between">
     <div class="flex flex-row pt-2">
       <a routerLink="/">
-        <!-- <img class="w-[72px] md:w-[80px] h-auto rounded-md transition hover:scale-105" src="/assets/img_other/jrose_200.JPG" alt="JRose logo"> -->
-        <img class="w-[50px] h-auto rounded-md md:ml-8 transition hover:scale-105" src="/assets/img_other/jrose_200.png" alt="JRose logo">
+        <div class={{logoWrapper1}}>
+          <img priority class="w-[50px] h-auto rounded-md md:ml-8 transition hover:scale-105" ngSrc="/assets/img_other/jrose_200.png" width="200" height="200" alt="JRose logo" (load)="fadeIn(1)">
+        </div>
       </a>
       <div class="mx-4">
-        <!-- <img class="w-[320px] md:w-[352px] h-auto" src="/assets/img_other/jrose_words_red.png" alt="JRose logo"> -->
-        <img class="w-[200px] h-auto" src="/assets/img_other/jrose_words_red.png" alt="JRose logo">
+        <div class={{logoWrapper2}}>
+          <img priority class="w-[200px] h-auto" ngSrc="/assets/img_other/jrose_words_red.png" width="400" height="125" alt="JRose logo" (load)="fadeIn(2)">
+        </div>
       </div>
     </div>
     <div class="flex space-x-10 pr-2 sm:pr-4 md:pr-8">

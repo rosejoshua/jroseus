@@ -71,10 +71,10 @@ export class PhotoService {
         height: 921,
       },
       { // index 10
-        nameStr: '/assets/img/Sunset-mountains-and-ocean-outside-of-Anchorage.JPG',
-        altStr: 'Sunset mountains and ocean outside of Anchorage',
+        nameStr: '/assets/img/Boats-on-the-Mekong-River-near-Luang-Prabang,-Laos.JPG',
+        altStr: 'Boats on the Mekong River near Luang Prabang, Laos',
         width: 1366,
-        height: 912,
+        height: 965,
       },
       { // index 11
         nameStr: '/assets/img/Vietnamese-woman-counts-money-while-husband-watches.JPG',
@@ -83,10 +83,10 @@ export class PhotoService {
         height: 1329,
       },
       { // index 12
-        nameStr: '/assets/img/View-of-lighted-bridge-from-the-water-in-Vietnam.JPG',
-        altStr: 'View of lighted bridge from the water in Vietnam',
+        nameStr: '/assets/img/Interesting-cloud-formation-in-the-desert-southwest.JPG',
+        altStr: 'Interesting cloud formation in the desert southwest',
         width: 1366,
-        height: 978,
+        height: 1042,
       },
       { // index 13
         nameStr: '/assets/img/Busan-fish-market-vendors.JPG',
@@ -95,10 +95,10 @@ export class PhotoService {
         height: 1137,
       },
       { // index 14
-        nameStr: '/assets/img/Vietnamese-riverboat-at-night.JPG',
-        altStr: 'Vietnamese riverboat at night',
+        nameStr: '/assets/img/Old-French-Bridge-in-Kampot,-Cambodia.JPG',
+        altStr: 'Old French Bridge in Kampot, Cambodia',
         width: 1366,
-        height: 912,
+        height: 782,
       },
       { // index 15
         nameStr: '/assets/img/Smoky-sunrise-on-the-Mekong-River-near-Luang-Prabang,-Laos.JPG',
@@ -237,10 +237,10 @@ export class PhotoService {
         height: 912,
       },
       { // index 21
-        nameStr: '/assets/img/Beer-mug-in-candlelight.JPG',
-        altStr: 'Beer mug in candlelight',
+        nameStr: '/assets/img/Climber-lost-in-thought-near-the-beach-in-Thailand.JPG',
+        altStr: 'Climber lost in thought near the beach in Thailand',
         width: 1366,
-        height: 1013,
+        height: 974,
       },
       { // index 22
         nameStr: '/assets/img/Black-and-white-photo-of-a-very-small-flower.JPG',
@@ -429,10 +429,10 @@ export class PhotoService {
         height: 911,
       },
       { // index 53
-        nameStr: '/assets/img/Climber-lost-in-thought-near-the-beach-in-Thailand.JPG',
-        altStr: 'Climber lost in thought near the beach in Thailand',
+        nameStr: '/assets/img/Beer-mug-in-candlelight.JPG',
+        altStr: 'Beer mug in candlelight',
         width: 1366,
-        height: 974,
+        height: 1013,
       },
       { // index 54
         nameStr: '/assets/img/Overhead-view-of-a-rushing-river-and-boulders.JPG',

@@ -54,12 +54,10 @@ export class HomeComponent implements OnInit {
   }
 
   setImgAsLoaded(i:number): void {
-    console.log("image num:" + i + " loaded");
     this.idxPhotoLoaded[i] = true;
   }
 
   autoAdvImg(): void {
-    console.log("auto advance called");
     this.photoClass = this.photoClassOpac0;
     this.timeoutId = setTimeout(() => {
       this.advanceImage()
